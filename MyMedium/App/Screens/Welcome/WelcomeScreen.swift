@@ -24,6 +24,7 @@ struct WelcomeScreen: View {
             VStack {
                 Image(uiImage: UIImage(imageLiteralResourceName: "AppIcon"))
                     .imageModifier()
+                    .accessibilityIdentifier("ConduitLogo")
                     .frame(width: 150,height: 150)
                     .padding()
                     .overlay(

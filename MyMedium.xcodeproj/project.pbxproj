@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		57002A952C50353500D20786 /* MyMediumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57002A942C50353500D20786 /* MyMediumUITests.swift */; };
 		57002A972C50353500D20786 /* MyMediumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */; };
+		578FF4462C51946800456446 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FF4452C51946800456446 /* LoginScreen.swift */; };
+		578FF4482C5196BB00456446 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FF4472C5196BB00456446 /* Login.swift */; };
+		57F74DB52C507EA50000FEF0 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DB42C507EA50000FEF0 /* WelcomeScreen.swift */; };
+		57F74DB72C507ECD0000FEF0 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DB62C507ECD0000FEF0 /* BaseTest.swift */; };
+		57F74DB92C507EF00000FEF0 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DB82C507EF00000FEF0 /* AuthenticationTests.swift */; };
+		57F74DBB2C51686B0000FEF0 /* Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DBA2C51686B0000FEF0 /* Initializers.swift */; };
+		57F74DBD2C5172CF0000FEF0 /* RunActivityWithScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DBC2C5172CF0000FEF0 /* RunActivityWithScreenshot.swift */; };
+		57F74DC12C5190B80000FEF0 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DC02C5190B80000FEF0 /* Welcome.swift */; };
 		9205B2C029768F7A004541EA /* FeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205B2BF29768F7A004541EA /* FeedScreen.swift */; };
 		9205B2C429769B2A004541EA /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205B2C329769B2A004541EA /* ProfileScreen.swift */; };
 		9205B2C72976C9A7004541EA /* CreateArticleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205B2C62976C9A7004541EA /* CreateArticleScreen.swift */; };
@@ -88,6 +96,14 @@
 		57002A922C50353500D20786 /* MyMediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57002A942C50353500D20786 /* MyMediumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITests.swift; sourceTree = "<group>"; };
 		57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		578FF4452C51946800456446 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		578FF4472C5196BB00456446 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		57F74DB42C507EA50000FEF0 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		57F74DB62C507ECD0000FEF0 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		57F74DB82C507EF00000FEF0 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
+		57F74DBA2C51686B0000FEF0 /* Initializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializers.swift; sourceTree = "<group>"; };
+		57F74DBC2C5172CF0000FEF0 /* RunActivityWithScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunActivityWithScreenshot.swift; sourceTree = "<group>"; };
+		57F74DC02C5190B80000FEF0 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		9205B2BF29768F7A004541EA /* FeedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreen.swift; sourceTree = "<group>"; };
 		9205B2C329769B2A004541EA /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		9205B2C62976C9A7004541EA /* CreateArticleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateArticleScreen.swift; sourceTree = "<group>"; };
@@ -175,10 +191,58 @@
 		57002A932C50353500D20786 /* MyMediumUITests */ = {
 			isa = PBXGroup;
 			children = (
+				57F74DAE2C5078360000FEF0 /* Screens */,
+				57F74DBE2C518FED0000FEF0 /* Services */,
+				57F74DB02C5078420000FEF0 /* Tests */,
+				57F74DB12C50784B0000FEF0 /* Utilities */,
 				57002A942C50353500D20786 /* MyMediumUITests.swift */,
 				57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */,
+				57F74DBA2C51686B0000FEF0 /* Initializers.swift */,
 			);
 			path = MyMediumUITests;
+			sourceTree = "<group>";
+		};
+		57F74DAE2C5078360000FEF0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				57F74DB42C507EA50000FEF0 /* WelcomeScreen.swift */,
+				578FF4452C51946800456446 /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		57F74DB02C5078420000FEF0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				57F74DB62C507ECD0000FEF0 /* BaseTest.swift */,
+				57F74DB82C507EF00000FEF0 /* AuthenticationTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		57F74DB12C50784B0000FEF0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				57F74DBC2C5172CF0000FEF0 /* RunActivityWithScreenshot.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		57F74DBE2C518FED0000FEF0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				57F74DBF2C51906D0000FEF0 /* Authentication */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		57F74DBF2C51906D0000FEF0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				57F74DC02C5190B80000FEF0 /* Welcome.swift */,
+				578FF4472C5196BB00456446 /* Login.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		9205B2BE29768615004541EA /* Feeds */ = {
@@ -620,8 +684,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F74DB92C507EF00000FEF0 /* AuthenticationTests.swift in Sources */,
+				578FF4482C5196BB00456446 /* Login.swift in Sources */,
+				57F74DB72C507ECD0000FEF0 /* BaseTest.swift in Sources */,
+				578FF4462C51946800456446 /* LoginScreen.swift in Sources */,
+				57F74DBB2C51686B0000FEF0 /* Initializers.swift in Sources */,
 				57002A972C50353500D20786 /* MyMediumUITestsLaunchTests.swift in Sources */,
+				57F74DC12C5190B80000FEF0 /* Welcome.swift in Sources */,
 				57002A952C50353500D20786 /* MyMediumUITests.swift in Sources */,
+				57F74DB52C507EA50000FEF0 /* WelcomeScreen.swift in Sources */,
+				57F74DBD2C5172CF0000FEF0 /* RunActivityWithScreenshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +779,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.vgss.MyMediumUITests;
@@ -730,7 +802,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.vgss.MyMediumUITests;
@@ -864,6 +936,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMedium/Preview Content\"";
+				DEVELOPMENT_TEAM = ABSR372LGM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Conduit;
@@ -877,7 +950,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.girish.MyMedium;
+				PRODUCT_BUNDLE_IDENTIFIER = me.vgss.MyMedium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -893,6 +966,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMedium/Preview Content\"";
+				DEVELOPMENT_TEAM = ABSR372LGM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Conduit;
@@ -906,7 +980,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.girish.MyMedium;
+				PRODUCT_BUNDLE_IDENTIFIER = me.vgss.MyMedium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
