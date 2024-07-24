@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "CF31E19C-63DD-4532-9A94-8ACEB80C69D7",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "BaseTest",
+        "Login",
+        "MyMediumUITests",
+        "MyMediumUITestsLaunchTests",
+        "Welcome"
+      ],
+      "target" : {
+        "containerPath" : "container:MyMedium.xcodeproj",
+        "identifier" : "57002A912C50353500D20786",
+        "name" : "MyMediumUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

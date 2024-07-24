@@ -98,6 +98,7 @@
 		57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		578FF4452C51946800456446 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		578FF4472C5196BB00456446 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		578FF4492C51B29B00456446 /* Regression.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Regression.xctestplan; path = MyMediumUITests/Regression.xctestplan; sourceTree = SOURCE_ROOT; };
 		57F74DB42C507EA50000FEF0 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		57F74DB62C507ECD0000FEF0 /* BaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
 		57F74DB82C507EF00000FEF0 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
@@ -191,6 +192,7 @@
 		57002A932C50353500D20786 /* MyMediumUITests */ = {
 			isa = PBXGroup;
 			children = (
+				578FF4492C51B29B00456446 /* Regression.xctestplan */,
 				57F74DAE2C5078360000FEF0 /* Screens */,
 				57F74DBE2C518FED0000FEF0 /* Services */,
 				57F74DB02C5078420000FEF0 /* Tests */,
