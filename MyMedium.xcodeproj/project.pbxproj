@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57002A952C50353500D20786 /* MyMediumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57002A942C50353500D20786 /* MyMediumUITests.swift */; };
-		57002A972C50353500D20786 /* MyMediumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */; };
 		578FF4462C51946800456446 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FF4452C51946800456446 /* LoginScreen.swift */; };
 		578FF4482C5196BB00456446 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FF4472C5196BB00456446 /* Login.swift */; };
 		57F74DB52C507EA50000FEF0 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F74DB42C507EA50000FEF0 /* WelcomeScreen.swift */; };
@@ -94,8 +92,6 @@
 
 /* Begin PBXFileReference section */
 		57002A922C50353500D20786 /* MyMediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57002A942C50353500D20786 /* MyMediumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITests.swift; sourceTree = "<group>"; };
-		57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		578FF4452C51946800456446 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		578FF4472C5196BB00456446 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		578FF4492C51B29B00456446 /* Regression.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Regression.xctestplan; path = MyMediumUITests/Regression.xctestplan; sourceTree = SOURCE_ROOT; };
@@ -197,8 +193,6 @@
 				57F74DBE2C518FED0000FEF0 /* Services */,
 				57F74DB02C5078420000FEF0 /* Tests */,
 				57F74DB12C50784B0000FEF0 /* Utilities */,
-				57002A942C50353500D20786 /* MyMediumUITests.swift */,
-				57002A962C50353500D20786 /* MyMediumUITestsLaunchTests.swift */,
 				57F74DBA2C51686B0000FEF0 /* Initializers.swift */,
 			);
 			path = MyMediumUITests;
@@ -691,9 +685,7 @@
 				57F74DB72C507ECD0000FEF0 /* BaseTest.swift in Sources */,
 				578FF4462C51946800456446 /* LoginScreen.swift in Sources */,
 				57F74DBB2C51686B0000FEF0 /* Initializers.swift in Sources */,
-				57002A972C50353500D20786 /* MyMediumUITestsLaunchTests.swift in Sources */,
 				57F74DC12C5190B80000FEF0 /* Welcome.swift in Sources */,
-				57002A952C50353500D20786 /* MyMediumUITests.swift in Sources */,
 				57F74DB52C507EA50000FEF0 /* WelcomeScreen.swift in Sources */,
 				57F74DBD2C5172CF0000FEF0 /* RunActivityWithScreenshot.swift in Sources */,
 			);
