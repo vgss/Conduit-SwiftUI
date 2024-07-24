@@ -27,7 +27,9 @@ class Login: XCTestCase {
             emailField.tap()
             emailField.typeText(email)
             XCTAssertEqual(emailField.value as? String, email, "The textfield does not contain the expected email")
+            app.keyboards.buttons["Return"].tap()
         }
+        
         
         runActivityWithScreenshot(named: "Inserting the expected password on the Password Text Field") {
             let pwField = loginScreen.passwordTextField
@@ -37,6 +39,7 @@ class Login: XCTestCase {
             
             let value = pwField.value as? String ?? ""
             XCTAssertEqual(value.count, password.count, "The textfield does not contain the expected password")
+            app.keyboards.buttons["Return"].tap()
         }
     }
     
