@@ -81,6 +81,7 @@ struct ArticleDetailViewScreen: View {
                         Text("Please log in to post a comment.")
                         AppButton(
                             text: "Login",
+                            isDisabled: false,
                             clicked: {
                                 let data = LoginScreenType(title: "Welcome Back", isCreateAccount: false)
                                 articleStack.presentedScreen.append(data)

@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "C7D26E5E-8243-4E96-AA2B-BBE7EC2AB2A6",
+      "name" : "Configuration 1",
+      "options" : {
+        "language" : "en",
+        "region" : "GB"
+      }
+    },
+    {
+      "id" : "0106E976-86B0-4DF8-8C89-B837098AA043",
+      "name" : "Configuration 2",
+      "options" : {
+        "language" : "pt-BR",
+        "region" : "BR"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MyMedium.xcodeproj",
+        "identifier" : "575E497E2C5830510002585E",
+        "name" : "MyMediumUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

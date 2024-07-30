@@ -25,7 +25,7 @@ class ForYouScreen: ScreenObject {
     }
     
     public func verifyForYouTitleScreen() throws -> Self {
-        forYouTitle.waitForExistence(timeout: Self.defaultWaitTimeout)
+        _ = forYouTitle.waitForExistence(timeout: Self.defaultWaitTimeout)
         XCTAssertTrue(forYouTitle.exists)
         return self
     }

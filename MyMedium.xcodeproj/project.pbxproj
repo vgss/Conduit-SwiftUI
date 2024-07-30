@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		575E49822C5830510002585E /* MyMediumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E49812C5830510002585E /* MyMediumUITests.swift */; };
-		575E49842C5830510002585E /* MyMediumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E49832C5830510002585E /* MyMediumUITestsLaunchTests.swift */; };
 		575E49912C5830910002585E /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E49902C5830910002585E /* Globals.swift */; };
 		575E49932C5830A80002585E /* WelcomeUIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E49922C5830A80002585E /* WelcomeUIScreen.swift */; };
 		575E49972C5831EF0002585E /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E49962C5831EF0002585E /* LoginScreen.swift */; };
-		57BEFC6A2C583C970092BA32 /* ScreenObject in Frameworks */ = {isa = PBXBuildFile; productRef = 57BEFC692C583C970092BA32 /* ScreenObject */; };
 		57BEFC6C2C5842920092BA32 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEFC6B2C5842920092BA32 /* LoginTests.swift */; };
 		57BEFC6E2C58432D0092BA32 /* UITestCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEFC6D2C58432D0092BA32 /* UITestCredentials.swift */; };
 		57BEFC702C5866310092BA32 /* ForYouScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEFC6F2C5866310092BA32 /* ForYouScreen.swift */; };
 		57BEFC722C586E290092BA32 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEFC712C586E290092BA32 /* Mockable.swift */; };
 		57BEFC752C586F5D0092BA32 /* ArticlesTrending.json in Resources */ = {isa = PBXBuildFile; fileRef = 57BEFC742C586F5D0092BA32 /* ArticlesTrending.json */; };
+		57BEFC7B2C591F260092BA32 /* ScreenObject in Frameworks */ = {isa = PBXBuildFile; productRef = 57BEFC7A2C591F260092BA32 /* ScreenObject */; };
+		57BEFC7E2C591F9F0092BA32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 57BEFC7D2C591F9F0092BA32 /* Alamofire */; };
 		9205B2C029768F7A004541EA /* FeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205B2BF29768F7A004541EA /* FeedScreen.swift */; };
 		9205B2C429769B2A004541EA /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205B2C329769B2A004541EA /* ProfileScreen.swift */; };
 		9205B2C72976C9A7004541EA /* CreateArticleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205B2C62976C9A7004541EA /* CreateArticleScreen.swift */; };
@@ -52,7 +51,6 @@
 		92EBBBDC29756CBE006E34EE /* ArticleApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBBDB29756CBE006E34EE /* ArticleApiEndpoint.swift */; };
 		92EBBBDE29756D32006E34EE /* ArticleServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBBDD29756D32006E34EE /* ArticleServices.swift */; };
 		92EBBBE129756EB9006E34EE /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EBBBE029756EB9006E34EE /* Articles.swift */; };
-		92FD151F296EC1B400C8AE0E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 92FD151E296EC1B400C8AE0E /* Alamofire */; };
 		92FD1524296EC41100C8AE0E /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FD1523296EC41100C8AE0E /* ApiError.swift */; };
 		92FD1527296EC45000C8AE0E /* AuthApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FD1526296EC45000C8AE0E /* AuthApiEndpoint.swift */; };
 		92FD1529296EC47600C8AE0E /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FD1528296EC47600C8AE0E /* AuthServices.swift */; };
@@ -95,8 +93,6 @@
 
 /* Begin PBXFileReference section */
 		575E497F2C5830510002585E /* MyMediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		575E49812C5830510002585E /* MyMediumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITests.swift; sourceTree = "<group>"; };
-		575E49832C5830510002585E /* MyMediumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMediumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		575E49902C5830910002585E /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		575E49922C5830A80002585E /* WelcomeUIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUIScreen.swift; sourceTree = "<group>"; };
 		575E49962C5831EF0002585E /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -105,6 +101,7 @@
 		57BEFC6F2C5866310092BA32 /* ForYouScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouScreen.swift; sourceTree = "<group>"; };
 		57BEFC712C586E290092BA32 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
 		57BEFC742C586F5D0092BA32 /* ArticlesTrending.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArticlesTrending.json; sourceTree = "<group>"; };
+		57BEFC762C591E340092BA32 /* RegressionTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RegressionTests.xctestplan; sourceTree = "<group>"; };
 		9205B2BF29768F7A004541EA /* FeedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreen.swift; sourceTree = "<group>"; };
 		9205B2C329769B2A004541EA /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		9205B2C62976C9A7004541EA /* CreateArticleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateArticleScreen.swift; sourceTree = "<group>"; };
@@ -170,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57BEFC6A2C583C970092BA32 /* ScreenObject in Frameworks */,
+				57BEFC7B2C591F260092BA32 /* ScreenObject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +178,8 @@
 				92611DA5297166F5009D8AA9 /* SwiftyJSON in Frameworks */,
 				F4E0D909297C2F340084B495 /* Shimmer in Frameworks */,
 				F48EA75F2986BEA60010591A /* HTMLEntities in Frameworks */,
+				57BEFC7E2C591F9F0092BA32 /* Alamofire in Frameworks */,
 				F46AAFC1297BFE0900B682C4 /* SwiftSoup in Frameworks */,
-				92FD151F296EC1B400C8AE0E /* Alamofire in Frameworks */,
 				92FD1535296ED1EC00C8AE0E /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,11 +190,10 @@
 		575E49802C5830510002585E /* MyMediumUITests */ = {
 			isa = PBXGroup;
 			children = (
+				57BEFC782C591E700092BA32 /* TestPlans */,
 				575E498F2C5830830002585E /* Utils */,
 				575E498E2C5830790002585E /* Tests */,
 				575E498D2C5830750002585E /* Screens */,
-				575E49812C5830510002585E /* MyMediumUITests.swift */,
-				575E49832C5830510002585E /* MyMediumUITestsLaunchTests.swift */,
 				575E49902C5830910002585E /* Globals.swift */,
 				57BEFC6D2C58432D0092BA32 /* UITestCredentials.swift */,
 			);
@@ -236,6 +232,21 @@
 				57BEFC742C586F5D0092BA32 /* ArticlesTrending.json */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		57BEFC782C591E700092BA32 /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				57BEFC762C591E340092BA32 /* RegressionTests.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
+		57BEFC7C2C591F9A0092BA32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9205B2BE29768615004541EA /* Feeds */ = {
@@ -322,6 +333,7 @@
 				92D2D728296C15EB008BA685 /* MyMedium */,
 				575E49802C5830510002585E /* MyMediumUITests */,
 				92D2D727296C15EB008BA685 /* Products */,
+				57BEFC7C2C591F9A0092BA32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -579,7 +591,7 @@
 			);
 			name = MyMediumUITests;
 			packageProductDependencies = (
-				57BEFC692C583C970092BA32 /* ScreenObject */,
+				57BEFC7A2C591F260092BA32 /* ScreenObject */,
 			);
 			productName = MyMediumUITests;
 			productReference = 575E497F2C5830510002585E /* MyMediumUITests.xctest */;
@@ -599,12 +611,12 @@
 			);
 			name = MyMedium;
 			packageProductDependencies = (
-				92FD151E296EC1B400C8AE0E /* Alamofire */,
 				92FD1534296ED1EC00C8AE0E /* AlertToast */,
 				92611DA4297166F5009D8AA9 /* SwiftyJSON */,
 				F46AAFC0297BFE0900B682C4 /* SwiftSoup */,
 				F4E0D908297C2F340084B495 /* Shimmer */,
 				F48EA75E2986BEA60010591A /* HTMLEntities */,
+				57BEFC7D2C591F9F0092BA32 /* Alamofire */,
 			);
 			productName = MyMedium;
 			productReference = 92D2D726296C15EB008BA685 /* MyMedium.app */;
@@ -645,7 +657,7 @@
 				F46AAFBF297BFE0800B682C4 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				F4E0D907297C2F340084B495 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 				F48EA75D2986BEA60010591A /* XCRemoteSwiftPackageReference "swift-html-entities" */,
-				57BEFC682C583C970092BA32 /* XCRemoteSwiftPackageReference "ScreenObject" */,
+				57BEFC792C591F260092BA32 /* XCRemoteSwiftPackageReference "ScreenObject" */,
 			);
 			productRefGroup = 92D2D727296C15EB008BA685 /* Products */;
 			projectDirPath = "";
@@ -683,9 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575E49842C5830510002585E /* MyMediumUITestsLaunchTests.swift in Sources */,
 				57BEFC702C5866310092BA32 /* ForYouScreen.swift in Sources */,
-				575E49822C5830510002585E /* MyMediumUITests.swift in Sources */,
 				575E49932C5830A80002585E /* WelcomeUIScreen.swift in Sources */,
 				57BEFC6C2C5842920092BA32 /* LoginTests.swift in Sources */,
 				575E49912C5830910002585E /* Globals.swift in Sources */,
@@ -1021,7 +1031,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		57BEFC682C583C970092BA32 /* XCRemoteSwiftPackageReference "ScreenObject" */ = {
+		57BEFC792C591F260092BA32 /* XCRemoteSwiftPackageReference "ScreenObject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Automattic/ScreenObject";
 			requirement = {
@@ -1080,20 +1090,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		57BEFC692C583C970092BA32 /* ScreenObject */ = {
+		57BEFC7A2C591F260092BA32 /* ScreenObject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 57BEFC682C583C970092BA32 /* XCRemoteSwiftPackageReference "ScreenObject" */;
+			package = 57BEFC792C591F260092BA32 /* XCRemoteSwiftPackageReference "ScreenObject" */;
 			productName = ScreenObject;
+		};
+		57BEFC7D2C591F9F0092BA32 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92FD151D296EC1B400C8AE0E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		92611DA4297166F5009D8AA9 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 92611DA3297166F5009D8AA9 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
-		};
-		92FD151E296EC1B400C8AE0E /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 92FD151D296EC1B400C8AE0E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 		92FD1534296ED1EC00C8AE0E /* AlertToast */ = {
 			isa = XCSwiftPackageProductDependency;
