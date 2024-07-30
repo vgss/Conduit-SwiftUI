@@ -90,6 +90,7 @@ struct WelcomeScreen: View {
                     SkipButton(clicked: {
                         isSkipped = true
                     })
+                    .accessibilityIdentifier("Pular")
             )
             .navigationBarTitleDisplayMode(.large)
         }

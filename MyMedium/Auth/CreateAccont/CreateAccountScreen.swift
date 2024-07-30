@@ -74,6 +74,7 @@ struct CreateAccountScreen: View {
                 Text(screenType.isCreateAccount ?? true ? "all ready have an account?\nLogin here" : "Don't have an account?\n Create here")
                     .font(.headline)
             }
+            .accessibilityIdentifier("create-account")
         }
         .padding()
         .navigationTitle(screenType.isCreateAccount ?? true ? "Create Account":"Login")

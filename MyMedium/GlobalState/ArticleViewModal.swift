@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class ArticleViewModel: ObservableObject {
+class ArticleViewModel: ObservableObject, Mockable {
     @Published var tagList: ArticleTag? = nil
     @Published var articleData: TrendingArticles? = TrendingArticles(articles: [], articlesCount: 0)
     @Published var showFlitterScreen: Bool = false
@@ -17,6 +17,9 @@ class ArticleViewModel: ObservableObject {
     
     @Published var selectedArticle: Article = DummyData().data
     @Published var comments: CommentListResponse?
+    
+    //Ui test stuff
+    var mockData: TrendingArticles = TrendingArticles()
     
     init() {
         getArticles()
@@ -83,23 +86,31 @@ class ArticleViewModel: ObservableObject {
     func getArticles() {
         print(flitterParameters.toDictionary())
         isLoading = true
-        ArticleServices().getTrendingArticle(parameters: flitterParameters.toDictionary()){
-            result in
+        if ProcessInfo.processInfo.arguments.contains("-mock-article") {
+            
+            mockData = loadJSON(file: "ArticlesTrending")
             self.isLoading = false
-            switch result {
-            case .success(let data):
-                self.articleData?.articlesCount = data.articlesCount
-                self.articleData?.articles?.append(contentsOf: data.articles!)
-            case .failure(let error):
-                switch error {
-                case .NetworkErrorAPIError(let errorMessage):
-                    print(errorMessage)
-                case .BadURL:
-                    print("BadURL")
-                case .NoData:
-                    print("NoData")
-                case .DecodingError:
-                    print("DecodingError")
+            self.articleData?.articlesCount = mockData.articlesCount
+            self.articleData?.articles?.append(contentsOf: mockData.articles!)
+        } else {
+            ArticleServices().getTrendingArticle(parameters: flitterParameters.toDictionary()){
+                result in
+                self.isLoading = false
+                switch result {
+                case .success(let data):
+                    self.articleData?.articlesCount = data.articlesCount
+                    self.articleData?.articles?.append(contentsOf: data.articles!)
+                case .failure(let error):
+                    switch error {
+                    case .NetworkErrorAPIError(let errorMessage):
+                        print(errorMessage)
+                    case .BadURL:
+                        print("BadURL")
+                    case .NoData:
+                        print("NoData")
+                    case .DecodingError:
+                        print("DecodingError")
+                    }
                 }
             }
         }

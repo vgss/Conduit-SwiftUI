@@ -13,6 +13,15 @@ struct ConduitApp: App {
     @AppStorage(AppConst.isSkipped) var isSkipped: Bool = false
     @AppStorage(AppConst.token) var token: String = ""
     
+    #if DEBUG
+    init() {
+        if ProcessInfo.processInfo.arguments.contains("-welcome-screen-not-skipped") {
+            isSkipped = false
+            token = ""
+        }
+    }
+    #endif
+    
     var body: some Scene {
         WindowGroup {
             if isSkipped == true || token != "" {

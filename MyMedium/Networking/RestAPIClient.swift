@@ -21,8 +21,15 @@ class RestAPIClient {
                                     costumeCompletion: ((HTTPURLResponse?) -> Void)? = nil) {
         
         @AppStorage(AppConst.token) var token: String = ""
+//        #if DEBUG
+//        if ProcessInfo.processInfo.arguments.contains("-welcome-screen-not-skipped") {
+//            token = ""
+//        }
+//        #endif
+        
         let encodedURL = endPoint.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         var headers: HTTPHeaders? = nil
+        
         if(token != ""){
             headers = [
                 "Authorization": "Bearer \(token)",
